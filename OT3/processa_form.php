@@ -8,7 +8,7 @@
         if(empty($nome) || empty($email)){
             echo"Nome e E-mail são OBRIGATÓRIOS!";
         }elseif(!preg_match("/^[a-zA-z ]*$/", $nome)){
-
+            echo "Nome deve ter apenas letras";
         }elseif ($idade < 18 || $idade >100) {
             echo "A idade deve ser entre 18 e 100 anos!";   
         }elseif (!preg_match("/^[0-9]{11}$/", $telefone)) {     
